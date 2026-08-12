@@ -41,7 +41,7 @@
 | 徽章行 | 版本 + 领域 | 版本绿胶囊 12.5px；领域紫胶囊 11.5px；一行左对齐 |
 | 关键词行 | top 5 触发词 | 灰胶囊 11.5px，flex-wrap 可换行，完整显示不截断 |
 | 简介 | description 全文 | 13.5px，行高 1.7，完整展开；flex 弹性撑开 |
-| 按钮行 | 左下 ★ Star / ⑂ Fork；右下 ⧉ Copy | 上边框分隔；暗色按钮 12.5px，padding 5px 11px，圆角 6px，hover 蓝边 |
+| 按钮行 | 左下 ★ Star；右下 ⧉ Copy | 上边框分隔；暗色按钮 12.5px，padding 5px 11px，圆角 6px，hover 蓝边 |
 
 ## 4. 数据规格
 

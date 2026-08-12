@@ -173,7 +173,6 @@ def render_html(items):
       <div class="card-foot">
         <div class="social">
           <a class="btn" href="{github}" target="_blank" rel="noopener">★ Star</a>
-          <a class="btn" href="{github}/fork" target="_blank" rel="noopener">⑂ Fork</a>
         </div>
         <button class="copy" onclick="copyCmd({idx})">⧉ Copy</button>
       </div>
