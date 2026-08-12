@@ -19,12 +19,36 @@
       "user_env",
       "prepare烧录环境"
     ],
-    "stars": 1,
+    "stars": 2,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash",
+    "remote_missing": false
+  },
+  {
+    "name": "gerrit-patch-flow",
+    "description": "Gerrit 端到端流水线 — xml 拉基线 → patch 合入 → 本地修改 → 只推一笔（方案C 保持hash）",
+    "version": "1.0.0",
+    "category": "devops",
+    "tags": [],
+    "triggers": [
+      "拉patch",
+      "打patch",
+      "推patch",
+      "gerrit流水线",
+      "只推一笔",
+      "合入change",
+      "xml拉代码"
+    ],
+    "stars": 0,
+    "updated": "2026-08-12",
+    "gitee": "https://gitee.com/GreatBigM/gerrit-patch-flow-skill",
+    "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
+    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash",
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash",
+    "remote_missing": false
   },
   {
     "name": "hermes-skill-gen",
@@ -48,7 +72,8 @@
     "gitee": "https://gitee.com/GreatBigM/hermes-skill-gen-skill",
     "github": "https://github.com/GreatBigM/hermes-skill-gen-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash",
+    "remote_missing": false
   },
   {
     "name": "hermes-skill-review",
@@ -72,7 +97,8 @@
     "gitee": "https://gitee.com/GreatBigM/hermes-skill-review-skill",
     "github": "https://github.com/GreatBigM/hermes-skill-review-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash",
+    "remote_missing": false
   },
   {
     "name": "iperf-standard-test",
@@ -95,7 +121,8 @@
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash",
+    "remote_missing": false
   },
   {
     "name": "qwiki",
@@ -122,7 +149,8 @@
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash",
+    "remote_missing": false
   },
   {
     "name": "serial-tftp",
@@ -148,7 +176,8 @@
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash",
+    "remote_missing": false
   },
   {
     "name": "workbench-workflow",
@@ -172,6 +201,7 @@
     "gitee": "https://gitee.com/GreatBigM/workbench-skill",
     "github": "https://github.com/GreatBigM/workbench-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash",
+    "remote_missing": false
   }
 ]

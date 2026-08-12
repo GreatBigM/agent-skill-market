@@ -63,7 +63,7 @@
     <div class="card" data-idx="0">
       <div class="card-head">
         <h2>adb-tftp</h2>
-        <span class="stars">★ 1</span>
+        <span class="stars">★ 2</span>
       </div>
       <div class="badges"><span class="ver">v1.1.0</span><span class="cat">devops</span></div>
       <div class="body">
@@ -79,6 +79,23 @@
     </div>
     <div class="card" data-idx="1">
       <div class="card-head">
+        <h2>gerrit-patch-flow</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.0.0</span><span class="cat">devops</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">拉patch</span> <span class="chip">打patch</span> <span class="chip">推patch</span> <span class="chip">gerrit流水线</span> <span class="chip">只推一笔</span></div>
+        <p class="desc">Gerrit 端到端流水线 — xml 拉基线 → patch 合入 → 本地修改 → 只推一笔（方案C 保持hash）</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/gerrit-patch-flow-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(1)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="2">
+      <div class="card-head">
         <h2>hermes-skill-gen</h2>
         <span class="stars">★ 1</span>
       </div>
@@ -91,10 +108,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/hermes-skill-gen-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(1)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(2)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="2">
+    <div class="card" data-idx="3">
       <div class="card-head">
         <h2>hermes-skill-review</h2>
         <span class="stars">★ 1</span>
@@ -108,10 +125,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/hermes-skill-review-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(2)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(3)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="3">
+    <div class="card" data-idx="4">
       <div class="card-head">
         <h2>iperf-standard-test</h2>
         <span class="stars">★ 1</span>
@@ -125,10 +142,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/iperf-standard-test-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(3)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(4)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="4">
+    <div class="card" data-idx="5">
       <div class="card-head">
         <h2>qwiki</h2>
         <span class="stars">★ 1</span>
@@ -142,10 +159,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/qwiki-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(4)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(5)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="5">
+    <div class="card" data-idx="6">
       <div class="card-head">
         <h2>serial-tftp</h2>
         <span class="stars">★ 1</span>
@@ -159,10 +176,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/serial-tftp-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(5)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(6)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="6">
+    <div class="card" data-idx="7">
       <div class="card-head">
         <h2>workbench-workflow</h2>
         <span class="stars">★ 1</span>
@@ -176,7 +193,7 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/workbench-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(6)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(7)">⧉ Copy</button>
       </div>
     </div>
   </div>
@@ -192,8 +209,8 @@
 </div>
 <script>
 const CMDS = {
-  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
-  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
+  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
+  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
 };
 function copyCmd(idx) {
   const src = location.hostname.includes("gitee.io") ? "gitee" : "github";
