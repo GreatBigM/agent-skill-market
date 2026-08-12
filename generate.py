@@ -62,6 +62,37 @@ def fetch_gitee_repos():
     return repos
 
 
+def _github_token():
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if token:
+        return token
+    try:
+        with open(os.path.join(HOME, ".hermes", ".env"), encoding="utf-8") as f:
+            for line in f:
+                if line.startswith("GITHUB_TOKEN="):
+                    return line.strip().split("=", 1)[1]
+    except Exception:
+        pass
+    return ""
+
+
+def fetch_github_stars(names):
+    """GitHub API 拉取各仓库 star 数（失败静默置 None，不阻塞生成）"""
+    token = _github_token()
+    result = {}
+    for n in names:
+        req = urllib.request.Request(f"https://api.github.com/repos/{GITHUB_USER}/{n}",
+                                     headers={"Accept": "application/vnd.github+json"})
+        if token:
+            req.add_header("Authorization", f"Bearer {token}")
+        try:
+            with urllib.request.urlopen(req, timeout=10) as r:
+                result[n] = json.load(r).get("stargazers_count")
+        except Exception:
+            result[n] = None
+    return result
+
+
 def parse_frontmatter(path):
     with open(path, encoding="utf-8") as f:
         text = f.read()
@@ -87,6 +118,7 @@ def git_last_commit(repo_dir):
 def collect(use_remote):
     names = discover_local()
     remote = fetch_gitee_repos() if use_remote else {}
+    stars = fetch_github_stars(names)
 
     items = []
     for name in names:
@@ -100,6 +132,7 @@ def collect(use_remote):
             "category": fm.get("category", ""),
             "tags": hermes.get("tags", []),
             "triggers": hermes.get("triggers", []),
+            "stars": stars.get(name),
             "updated": git_last_commit(repo_dir),
             "gitee": f"https://gitee.com/{GITEE_USER}/{name}",
             "github": f"https://github.com/{GITHUB_USER}/{name}",
@@ -124,15 +157,19 @@ def render_html(items):
         trig = " ".join(f'<span class="chip">{t}</span>' for t in it["triggers"][:5])
         ver = f'<span class="ver">v{it["version"]}</span>' if it["version"] else ""
         cat = f'<span class="cat">{it["category"]}</span>' if it["category"] else ""
+        stars = f'<span class="stars">★ {it["stars"]}</span>' if it.get("stars") else ""
         github = it["github"]
         cards.append(f"""
     <div class="card" data-idx="{idx}">
       <div class="card-head">
         <h2>{it["name"]}</h2>
+        {stars}
       </div>
       <div class="badges">{ver}{cat}</div>
-      <div class="triggers">{trig}</div>
-      <p class="desc">{it["description"]}</p>
+      <div class="body">
+        <div class="triggers">{trig}</div>
+        <p class="desc">{it["description"]}</p>
+      </div>
       <div class="card-foot">
         <div class="social">
           <a class="btn" href="{github}/stargazers" target="_blank" rel="noopener">★ Star</a>
@@ -146,7 +183,7 @@ def render_html(items):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GreatM's Zoo — Hermes Skill Market</title>
+<title>GreatBM'Zoo — Hermes Skill Market</title>
 <style>
   :root {{
     --bg: #0d1117; --card: #161b26; --border: #232a3a;
@@ -164,19 +201,21 @@ def render_html(items):
   .sub {{ color: var(--dim); margin-top: 8px; }}
   .stats {{ display: inline-flex; gap: 24px; margin-top: 14px; color: var(--accent2); font-size: 14px; }}
   .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; grid-auto-rows: 1fr; }}
-  .card {{ background: linear-gradient(180deg, rgba(255,255,255,.03), transparent 40%), var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px 14px; position: relative; overflow: hidden; transition: transform .18s, border-color .18s, box-shadow .18s; height: 100%; display: flex; flex-direction: column; }}
+  .card {{ background: linear-gradient(180deg, rgba(255,255,255,.03), transparent 40%), var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 22px 20px 16px; position: relative; overflow: hidden; transition: transform .18s, border-color .18s, box-shadow .18s; height: 100%; min-height: 340px; display: flex; flex-direction: column; }}
   .card::before {{ content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--accent), transparent 65%); opacity: 0; transition: opacity .18s; }}
   .card:hover {{ transform: translateY(-3px); border-color: rgba(88,166,255,.5); box-shadow: 0 10px 26px rgba(0,0,0,.45); }}
   .card:hover::before {{ opacity: 1; }}
   .card-head {{ display: flex; align-items: center; justify-content: space-between; gap: 8px; }}
   .card-head h2 {{ font-size: 18px; font-family: ui-monospace, "Cascadia Code", Consolas, monospace; color: var(--text); letter-spacing: .3px; }}
-  .badges {{ display: flex; gap: 6px; margin-top: 4px; }}
+  .stars {{ color: #e3b341; font-size: 13px; font-weight: 600; background: rgba(227,179,65,.12); border: 1px solid rgba(227,179,65,.35); padding: 2px 10px; border-radius: 20px; }}
+  .badges {{ display: flex; gap: 6px; margin-top: 5px; }}
   .ver {{ color: var(--accent2); font-family: ui-monospace, monospace; font-size: 12.5px; background: rgba(63,185,80,.12); border: 1px solid rgba(63,185,80,.25); padding: 1px 9px; border-radius: 20px; }}
   .cat {{ color: #c9a0ff; font-size: 11.5px; background: rgba(201,160,255,.12); border: 1px solid rgba(201,160,255,.25); padding: 1px 9px; border-radius: 20px; }}
-  .triggers {{ display: flex; gap: 6px; margin: 11px 0 8px; overflow: hidden; }}
+  .triggers {{ display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }}
   .chip {{ font-size: 11.5px; color: #a5b3c2; background: #1e2534; border: 1px solid #2a3346; border-radius: 6px; padding: 1px 8px; white-space: nowrap; }}
-  .desc {{ color: var(--dim); font-size: 13.5px; line-height: 1.6; margin: 0 0 14px; flex: 1; }}
-  .card-foot {{ display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--border); padding-top: 12px; }}
+  .body {{ border-top: 1px solid var(--border); margin-top: 12px; padding-top: 12px; flex: 1; display: flex; flex-direction: column; }}
+  .desc {{ color: var(--dim); font-size: 13.5px; line-height: 1.7; margin: 0 0 16px; flex: 1; }}
+  .card-foot {{ display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--border); padding-top: 13px; }}
   .social {{ display: flex; gap: 6px; }}
   .btn {{ display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; color: var(--text); background: #1c2333; border: 1px solid #2b3346; border-radius: 6px; padding: 5px 11px; text-decoration: none; transition: border-color .15s, color .15s, background .15s; }}
   .btn:hover, .copy:hover {{ border-color: var(--accent); color: var(--accent); background: rgba(88,166,255,.08); }}
@@ -184,12 +223,14 @@ def render_html(items):
   .copy:active {{ transform: scale(.97); }}
   footer {{ text-align: center; color: var(--dim); font-size: 13px; margin-top: 50px; }}
   footer code {{ background: #1a1d27; padding: 1px 6px; border-radius: 4px; }}
+  .legal {{ margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 12px; color: #6b7480; }}
+  .legal div + div {{ margin-top: 6px; }}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>GreatM's <span class="hl">Zoo</span></h1>
+    <h1>GreatBM'<span class="hl">Zoo</span></h1>
     <p class="sub">甜妞维护 · Agent Skill 集 · 即装即用</p>
     <div class="stats">
       <span>饲养员：GreatBigM、甜妞</span>
@@ -201,8 +242,13 @@ def render_html(items):
 {''.join(cards)}
   </div>
   <footer>
-    安装 = 点击卡片 <code>Copy</code> 复制安装命令到终端执行（<code>--all</code> 装到全部检测到的 agent，重跑即升级）。
     页面由 <code>generate.py</code> 自动扫描本地发布仓生成，发新 skill 建仓即自动入市场。
+    <div class="legal">
+      <div>© 2026 GreatBigM 版权所有 ｜ 本站 skill 均基于 MIT 协议开源</div>
+      <div>免责声明：所有 skill 按「现状」提供，不附任何担保；烧录/调试等操作风险自负，作者不承担由此产生的任何损失</div>
+      <div>安全提示：安装命令源自各 skill 官方仓库，执行前可查看 install.sh；请仅从本站及官方仓库安装，谨防仿冒</div>
+      <div>隐私保护：本站为纯静态页面，不收集任何用户信息，不设 Cookie，无第三方跟踪 ｜ Hermes、Claude Code、Codex 等商标归各自所有者所有</div>
+    </div>
   </footer>
 </div>
 <script>

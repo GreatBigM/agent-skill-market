@@ -1,4 +1,4 @@
-# GreatM's Zoo ★
+# GreatBM'Zoo ★
 
 甜妞维护的 Hermes Agent skill 市场 — 嵌入式 & 工作流技能集，一键安装。
 
