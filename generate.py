@@ -125,28 +125,20 @@ def render_html(items):
         trig = " ".join(f'<span class="chip">{t}</span>' for t in it["triggers"][:6])
         ver = f'<span class="ver">v{it["version"]}</span>' if it["version"] else ""
         cat = f'<span class="cat">{it["category"]}</span>' if it["category"] else ""
-        upd = f'<span class="upd">🔄 {it["updated"]}</span>' if it["updated"] else ""
         cards.append(f"""
     <div class="card" data-idx="{idx}">
       <div class="card-head">
         <h2>{it["name"]}</h2>
-        <div class="badges">{ver}{cat}{upd}</div>
+        <div class="badges">{ver}{cat}</div>
       </div>
       <p class="desc">{it["description"]}</p>
       <div class="triggers">{trig}</div>
       <div class="install">
         <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, {idx})">gitee（国内）</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, {idx})">GitHub（海外）</button>
+          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, {idx})">gitee 源</button>
+          <button class="src-tab" data-src="github" onclick="switchSrc(this, {idx})">GitHub 源</button>
         </div>
-        <div class="cmd-row">
-          <code class="cmd" id="cmd-{idx}">{it["install_gitee"]}</code>
-          <button class="copy" onclick="copyCmd({idx})">复制</button>
-        </div>
-      </div>
-      <div class="links">
-        <a href="{it["gitee"]}" target="_blank">gitee 仓库 ↗</a>
-        <a href="{it["github"]}" target="_blank">GitHub 镜像 ↗</a>
+        <button class="copy" onclick="copyCmd({idx})">📋 复制安装命令</button>
       </div>
     </div>""")
     return f"""<!DOCTYPE html>
@@ -168,7 +160,7 @@ def render_html(items):
   h1 .hl {{ color: var(--accent); }}
   .sub {{ color: var(--dim); margin-top: 8px; }}
   .stats {{ display: inline-flex; gap: 24px; margin-top: 14px; color: var(--accent2); font-size: 14px; }}
-  .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); gap: 18px; }}
+  .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }}
   .card {{ background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; transition: transform .15s, border-color .15s; }}
   .card:hover {{ transform: translateY(-2px); border-color: var(--accent); background: var(--card-hover); }}
   .card-head {{ display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }}
@@ -184,13 +176,8 @@ def render_html(items):
   .src-tabs {{ display: flex; background: #14161f; }}
   .src-tab {{ flex: 1; background: none; border: none; color: var(--dim); padding: 7px 0; cursor: pointer; font-size: 13px; border-bottom: 2px solid transparent; }}
   .src-tab.active {{ color: var(--accent); border-bottom-color: var(--accent); background: rgba(124,156,255,.08); }}
-  .cmd-row {{ display: flex; align-items: center; background: #10131b; }}
-  .cmd {{ flex: 1; font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; color: #a8e6cf; padding: 10px 12px; overflow-x: auto; white-space: nowrap; }}
-  .copy {{ background: var(--accent); color: #0b0e14; border: none; border-radius: 6px; margin: 6px 8px; padding: 6px 14px; cursor: pointer; font-size: 13px; font-weight: 600; }}
+  .copy {{ display: block; width: 100%; background: var(--accent); color: #0b0e14; border: none; padding: 10px 0; cursor: pointer; font-size: 14px; font-weight: 600; transition: filter .15s; }}
   .copy:hover {{ filter: brightness(1.15); }}
-  .links {{ margin-top: 10px; display: flex; gap: 16px; font-size: 13px; }}
-  .links a {{ color: var(--accent); text-decoration: none; }}
-  .links a:hover {{ text-decoration: underline; }}
   footer {{ text-align: center; color: var(--dim); font-size: 13px; margin-top: 50px; }}
   footer code {{ background: #1a1d27; padding: 1px 6px; border-radius: 4px; }}
 </style>
@@ -210,28 +197,27 @@ def render_html(items):
 {''.join(cards)}
   </div>
   <footer>
-    安装 = 复制命令到终端执行（<code>--all</code> 装到全部检测到的 agent，重跑即升级）。
+    安装 = 点击卡片「复制安装命令」到终端执行（<code>--all</code> 装到全部检测到的 agent，重跑即升级）。
     页面由 <code>generate.py</code> 自动扫描本地发布仓生成，发新 skill 建仓即自动入市场。
   </footer>
 </div>
 <script>
+const GITEE_CMDS = {json.dumps([it["install_gitee"] for it in items])};
+const GITHUB_CMDS = {json.dumps([it["install_github"] for it in items])};
 function switchSrc(btn, idx) {{
   const tabs = btn.parentElement.children;
   for (const t of tabs) t.classList.remove("active");
   btn.classList.add("active");
-  const cmds = {json.dumps([it["install_gitee"] for it in items])};
-  const giteeCmds = {json.dumps([it["install_gitee"] for it in items])};
-  const githubCmds = {json.dumps([it["install_github"] for it in items])};
-  const code = btn.dataset.src === "gitee" ? giteeCmds[idx] : githubCmds[idx];
-  document.querySelector(`#cmd-${{idx}}`).textContent = code;
 }}
 function copyCmd(idx) {{
-  const cmd = document.querySelector(`#cmd-${{idx}}`).textContent;
+  const active = document.querySelector(`.card[data-idx="${{idx}}"] .src-tab.active`);
+  const src = active ? active.dataset.src : "gitee";
+  const cmd = src === "gitee" ? GITEE_CMDS[idx] : GITHUB_CMDS[idx];
   navigator.clipboard.writeText(cmd).then(() => {{
     const b = document.querySelector(`.card[data-idx="${{idx}}"] .copy`);
     const old = b.textContent;
-    b.textContent = "✅ 已复制";
-    setTimeout(() => b.textContent = old, 1500);
+    b.textContent = "✅ 已复制，去终端粘贴执行";
+    setTimeout(() => b.textContent = old, 2000);
   }});
 }}
 </script>
