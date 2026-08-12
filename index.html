@@ -29,10 +29,6 @@
   .desc { color: #c6cad6; margin: 12px 0 10px; font-size: 14px; }
   .triggers { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; min-height: 26px; }
   .chip { font-size: 12px; color: var(--dim); background: #242837; border: 1px solid var(--border); border-radius: 4px; padding: 1px 7px; }
-  .install { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-  .src-tabs { display: flex; background: #14161f; }
-  .src-tab { flex: 1; background: none; border: none; color: var(--dim); padding: 7px 0; cursor: pointer; font-size: 13px; border-bottom: 2px solid transparent; }
-  .src-tab.active { color: var(--accent); border-bottom-color: var(--accent); background: rgba(124,156,255,.08); }
   .copy { display: block; width: 100%; background: var(--accent); color: #0b0e14; border: none; padding: 10px 0; cursor: pointer; font-size: 14px; font-weight: 600; transition: filter .15s; }
   .copy:hover { filter: brightness(1.15); }
   footer { text-align: center; color: var(--dim); font-size: 13px; margin-top: 50px; }
@@ -47,7 +43,7 @@
     <div class="stats">
       <span>7 skills</span>
       <span>多 agent 支持：Hermes / Claude Code / Codex</span>
-      <span>更新于 2026-08-12 19:11</span>
+      <span>更新于 2026-08-12 19:17</span>
     </div>
   </header>
   <div class="grid">
@@ -59,13 +55,7 @@
       </div>
       <p class="desc">Ingenic T32 家族 NOR flash 项目 ADB 通道 TFTP 烧录 - 通过 ADB 写 CPSPR 寄存器触发 U-Boot 进入 TFTP 模式，支持分区级烧录。含一次性 prepare 流程（编译定制 adb + gen_adbd_conf + user_env），配齐后 ip-reset-and-wait 自动等设备回连，无需串口查 IP。适用 HM6801/HM6502/HM6502_B01/HM6503/HM6402（共用同一 mtdparts）。HM6505 是 NAND 平台，不适用</p>
       <div class="triggers"><span class="chip">adb烧录</span> <span class="chip">cpspr</span> <span class="chip">mai_auto_flash</span> <span class="chip">ip-reset-and-wait</span> <span class="chip">分区烧录</span> <span class="chip">hm6801烧录</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 0)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 0)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(0)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(0)">📋 复制安装命令</button>
     </div>
     <div class="card" data-idx="1">
       <div class="card-head">
@@ -74,13 +64,7 @@
       </div>
       <p class="desc">生成新 skill 前加载，按构成规范设计文件层级与文件约束。</p>
       <div class="triggers"><span class="chip">生成skill</span> <span class="chip">skill构成</span> <span class="chip">skill架构</span> <span class="chip">新建skill</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 1)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 1)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(1)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(1)">📋 复制安装命令</button>
     </div>
     <div class="card" data-idx="2">
       <div class="card-head">
@@ -89,13 +73,7 @@
       </div>
       <p class="desc">SKILL 生成后/发布前加载，按构成规范与打包分发清单审查。</p>
       <div class="triggers"><span class="chip">审查skill</span> <span class="chip">skill审核</span> <span class="chip">二次审核</span> <span class="chip">skill review</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 2)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 2)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(2)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(2)">📋 复制安装命令</button>
     </div>
     <div class="card" data-idx="3">
       <div class="card-head">
@@ -104,13 +82,7 @@
       </div>
       <p class="desc">使用 iperf3 标准吞吐测试 — 测试矩阵设计、执行通道选择、数据分析（爬坡/重传/丢包/环境波动）、报告模板</p>
       <div class="triggers"><span class="chip">iperf测试</span> <span class="chip">吞吐测试</span> <span class="chip">带宽测试</span> <span class="chip">压测</span> <span class="chip">性能测试</span> <span class="chip">测试报告</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 3)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 3)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(3)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(3)">📋 复制安装命令</button>
     </div>
     <div class="card" data-idx="4">
       <div class="card-head">
@@ -119,13 +91,7 @@
       </div>
       <p class="desc">Use when user says qwiki. Knowledge base management.</p>
       <div class="triggers"><span class="chip">qwiki</span> <span class="chip">知识库</span> <span class="chip">知识管理</span> <span class="chip">wiki</span> <span class="chip">知识检索</span> <span class="chip">知识同步</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 4)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 4)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(4)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(4)">📋 复制安装命令</button>
     </div>
     <div class="card" data-idx="5">
       <div class="card-head">
@@ -134,13 +100,7 @@
       </div>
       <p class="desc">嵌入式设备串口交互与 TFTP 刷机 — 环境预检、串口连接、模式判断、配网烧录、完成验证</p>
       <div class="triggers"><span class="chip">tftp</span> <span class="chip">刷机</span> <span class="chip">烧录</span> <span class="chip">mai_tftp</span> <span class="chip">tftpboot</span> <span class="chip">auto_update_tftp</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 5)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 5)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(5)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(5)">📋 复制安装命令</button>
     </div>
     <div class="card" data-idx="6">
       <div class="card-head">
@@ -149,13 +109,7 @@
       </div>
       <p class="desc">项目任务管理体系 — change 四要素生命周期、闭环、spec 维护（宪法见 SCHEMA.md）</p>
       <div class="triggers"><span class="chip">workbench</span> <span class="chip">change</span> <span class="chip">新建任务</span> <span class="chip">闭环</span> <span class="chip">验收</span> <span class="chip">归档</span></div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, 6)">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, 6)">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd(6)">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd(6)">📋 复制安装命令</button>
     </div>
   </div>
   <footer>
@@ -164,18 +118,9 @@
   </footer>
 </div>
 <script>
-const GITEE_CMDS = ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"];
-const GITHUB_CMDS = ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"];
-function switchSrc(btn, idx) {
-  const tabs = btn.parentElement.children;
-  for (const t of tabs) t.classList.remove("active");
-  btn.classList.add("active");
-}
+const INSTALL_CMDS = ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"];
 function copyCmd(idx) {
-  const active = document.querySelector(`.card[data-idx="${idx}"] .src-tab.active`);
-  const src = active ? active.dataset.src : "gitee";
-  const cmd = src === "gitee" ? GITEE_CMDS[idx] : GITHUB_CMDS[idx];
-  navigator.clipboard.writeText(cmd).then(() => {
+  navigator.clipboard.writeText(INSTALL_CMDS[idx]).then(() => {
     const b = document.querySelector(`.card[data-idx="${idx}"] .copy`);
     const old = b.textContent;
     b.textContent = "✅ 已复制，去终端粘贴执行";

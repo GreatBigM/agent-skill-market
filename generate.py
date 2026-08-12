@@ -133,13 +133,7 @@ def render_html(items):
       </div>
       <p class="desc">{it["description"]}</p>
       <div class="triggers">{trig}</div>
-      <div class="install">
-        <div class="src-tabs">
-          <button class="src-tab active" data-src="gitee" onclick="switchSrc(this, {idx})">gitee 源</button>
-          <button class="src-tab" data-src="github" onclick="switchSrc(this, {idx})">GitHub 源</button>
-        </div>
-        <button class="copy" onclick="copyCmd({idx})">📋 复制安装命令</button>
-      </div>
+      <button class="copy" onclick="copyCmd({idx})">📋 复制安装命令</button>
     </div>""")
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -172,10 +166,6 @@ def render_html(items):
   .desc {{ color: #c6cad6; margin: 12px 0 10px; font-size: 14px; }}
   .triggers {{ display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; min-height: 26px; }}
   .chip {{ font-size: 12px; color: var(--dim); background: #242837; border: 1px solid var(--border); border-radius: 4px; padding: 1px 7px; }}
-  .install {{ border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }}
-  .src-tabs {{ display: flex; background: #14161f; }}
-  .src-tab {{ flex: 1; background: none; border: none; color: var(--dim); padding: 7px 0; cursor: pointer; font-size: 13px; border-bottom: 2px solid transparent; }}
-  .src-tab.active {{ color: var(--accent); border-bottom-color: var(--accent); background: rgba(124,156,255,.08); }}
   .copy {{ display: block; width: 100%; background: var(--accent); color: #0b0e14; border: none; padding: 10px 0; cursor: pointer; font-size: 14px; font-weight: 600; transition: filter .15s; }}
   .copy:hover {{ filter: brightness(1.15); }}
   footer {{ text-align: center; color: var(--dim); font-size: 13px; margin-top: 50px; }}
@@ -202,18 +192,9 @@ def render_html(items):
   </footer>
 </div>
 <script>
-const GITEE_CMDS = {json.dumps([it["install_gitee"] for it in items])};
-const GITHUB_CMDS = {json.dumps([it["install_github"] for it in items])};
-function switchSrc(btn, idx) {{
-  const tabs = btn.parentElement.children;
-  for (const t of tabs) t.classList.remove("active");
-  btn.classList.add("active");
-}}
+const INSTALL_CMDS = {json.dumps([it["install_gitee"] for it in items])};
 function copyCmd(idx) {{
-  const active = document.querySelector(`.card[data-idx="${{idx}}"] .src-tab.active`);
-  const src = active ? active.dataset.src : "gitee";
-  const cmd = src === "gitee" ? GITEE_CMDS[idx] : GITHUB_CMDS[idx];
-  navigator.clipboard.writeText(cmd).then(() => {{
+  navigator.clipboard.writeText(INSTALL_CMDS[idx]).then(() => {{
     const b = document.querySelector(`.card[data-idx="${{idx}}"] .copy`);
     const old = b.textContent;
     b.textContent = "✅ 已复制，去终端粘贴执行";
