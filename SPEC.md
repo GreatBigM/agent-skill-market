@@ -64,7 +64,7 @@
 ## 6. 页面骨架
 
 - 标题：GreatBM'Zoo（Zoo 高亮蓝）
-- 副标题：甜妞维护 · Agent Skill 集 · 即装即用
+- 副标题：大山子科技有限公司出品 · Agent Skill 集 · 即装即用
 - 统计行：饲养员：GreatBigM、甜妞 ｜ 多 agent 支持：Hermes / Claude Code / Codex ｜ 感谢各位游客老爷的投喂
 - 背景：深色 #0d1117 + 蓝/绿双色 radial 渐变光晕
 
