@@ -192,9 +192,13 @@ def render_html(items):
   </footer>
 </div>
 <script>
-const INSTALL_CMDS = {json.dumps([it["install_gitee"] for it in items])};
+const CMDS = {{
+  "github": {json.dumps([it["install_github"] for it in items])},
+  "gitee": {json.dumps([it["install_gitee"] for it in items])}
+}};
 function copyCmd(idx) {{
-  navigator.clipboard.writeText(INSTALL_CMDS[idx]).then(() => {{
+  const src = location.hostname.includes("gitee.io") ? "gitee" : "github";
+  navigator.clipboard.writeText(CMDS[src][idx]).then(() => {{
     const b = document.querySelector(`.card[data-idx="${{idx}}"] .copy`);
     const old = b.textContent;
     b.textContent = "✅ 已复制，去终端粘贴执行";
