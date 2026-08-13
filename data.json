@@ -24,8 +24,7 @@
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash"
   },
   {
     "name": "gerrit-patch-flow",
@@ -47,8 +46,7 @@
     "gitee": "https://gitee.com/GreatBigM/gerrit-patch-flow-skill",
     "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash"
   },
   {
     "name": "hermes-skill-gen",
@@ -67,13 +65,12 @@
       "skill架构",
       "新建skill"
     ],
-    "stars": 1,
+    "stars": 2,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/hermes-skill-gen-skill",
     "github": "https://github.com/GreatBigM/hermes-skill-gen-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash"
   },
   {
     "name": "hermes-skill-review",
@@ -92,13 +89,12 @@
       "二次审核",
       "skill review"
     ],
-    "stars": 1,
+    "stars": 2,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/hermes-skill-review-skill",
     "github": "https://github.com/GreatBigM/hermes-skill-review-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash"
   },
   {
     "name": "iperf-standard-test",
@@ -121,8 +117,7 @@
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash"
   },
   {
     "name": "qwiki",
@@ -144,13 +139,12 @@
       "项目入驻",
       "知识卡片"
     ],
-    "stars": 1,
+    "stars": 2,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash"
   },
   {
     "name": "serial-tftp",
@@ -176,8 +170,7 @@
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash"
   },
   {
     "name": "workbench-workflow",
@@ -196,12 +189,11 @@
       "design吸收",
       "四要素"
     ],
-    "stars": 1,
+    "stars": 2,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/workbench-skill",
     "github": "https://github.com/GreatBigM/workbench-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"
   }
 ]
