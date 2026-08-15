@@ -19,7 +19,7 @@
       "user_env",
       "prepare烧录环境"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
@@ -41,7 +41,7 @@
       "合入change",
       "xml拉代码"
     ],
-    "stars": null,
+    "stars": 1,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/gerrit-patch-flow-skill",
     "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
@@ -65,7 +65,7 @@
       "skill架构",
       "新建skill"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/hermes-skill-gen-skill",
     "github": "https://github.com/GreatBigM/hermes-skill-gen-skill",
@@ -89,7 +89,7 @@
       "二次审核",
       "skill review"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/hermes-skill-review-skill",
     "github": "https://github.com/GreatBigM/hermes-skill-review-skill",
@@ -112,7 +112,7 @@
       "爬坡",
       "重传率分析"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
@@ -139,7 +139,7 @@
       "项目入驻",
       "知识卡片"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
@@ -165,7 +165,7 @@
       "uboot",
       "串口登录"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
@@ -189,7 +189,7 @@
       "design吸收",
       "四要素"
     ],
-    "stars": null,
+    "stars": 3,
     "updated": "2026-08-12",
     "gitee": "https://gitee.com/GreatBigM/workbench-skill",
     "github": "https://github.com/GreatBigM/workbench-skill",
