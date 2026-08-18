@@ -1,6 +1,6 @@
 # GreatBM'Zoo — 卡片规格（定稿）
 
-> 规格版本：v1.2（2026-08-18 定稿）
+> 规格版本：v1.3（2026-08-18 定稿）
 > 真相源：本文件 + `generate.py`（渲染代码即执行态，两者冲突以本文件为准，需同步修正 generate.py）
 > 变更流程：任何样式/内容结构调整 = 规格变更，先改本文件 bump 版本，再改 generate.py
 
@@ -50,8 +50,8 @@
 | name | SKILL.md frontmatter name | — |
 | version | SKILL.md frontmatter version | v1.x.x |
 | category | SKILL.md frontmatter category | 英文分类 |
-| triggers | SKILL.md frontmatter metadata.hermes.triggers | 卡片取 top 5 |
-| description | SKILL.md frontmatter description | **≤ 100 字符**（hermes-skill-gen 文件间约束 #10） |
+| triggers | SKILL.md frontmatter metadata.agent.triggers | 卡片取 top 5 |
+| description | SKILL.md frontmatter description | **≤ 100 字符**（agent-skill-gen 文件间约束 #10） |
 | stars | GitHub API（生成时拉取） | 0 星隐藏；失败静默降级 |
 
 ## 5. 交互与隐私

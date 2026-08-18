@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""hermes-skill-market 生成器 — 自动发现 + 自动同步
+"""agent-skill-market 生成器 — 自动发现 + 自动同步
 
 单一真相源 = 各 skill 发布仓库本身（~/<name>-skill/SKILL.md），网页只是渲染层。
 卡片规格真相源 = SPEC.md（本文件与 SPEC.md 冲突时以 SPEC.md 为准，需同步修正）。
@@ -124,14 +124,14 @@ def collect(use_remote):
     for name in names:
         repo_dir = os.path.join(HOME, name)
         fm = parse_frontmatter(os.path.join(repo_dir, "SKILL.md"))
-        hermes = fm.get("metadata", {}).get("hermes", {}) if isinstance(fm.get("metadata"), dict) else {}
+        agent = fm.get("metadata", {}).get("agent", {}) if isinstance(fm.get("metadata"), dict) else {}
         items.append({
             "name": fm.get("name", name),
             "description": fm.get("description", ""),
             "version": fm.get("version", ""),
             "category": fm.get("category", ""),
-            "tags": hermes.get("tags", []),
-            "triggers": hermes.get("triggers", []),
+            "tags": agent.get("tags", []),
+            "triggers": agent.get("triggers", []),
             "stars": stars.get(name),
             "updated": git_last_commit(repo_dir),
             "gitee": f"https://gitee.com/{GITEE_USER}/{name}",
@@ -182,7 +182,7 @@ def render_html(items):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GreatBM'Zoo — Hermes Skill Market</title>
+<title>GreatBM'Zoo — Agent Skill Market</title>
 <style>
   :root {{
     --bg: #0d1117; --card: #161b26; --border: #232a3a;

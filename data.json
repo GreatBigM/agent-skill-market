@@ -27,6 +27,54 @@
     "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash"
   },
   {
+    "name": "agent-skill-gen",
+    "description": "新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。",
+    "version": "1.6.0",
+    "category": "autonomous-ai-agents",
+    "tags": [
+      "agent",
+      "skills",
+      "generation",
+      "architecture"
+    ],
+    "triggers": [
+      "生成skill",
+      "skill构成",
+      "skill架构",
+      "新建skill"
+    ],
+    "stars": null,
+    "updated": "2026-08-12",
+    "gitee": "https://gitee.com/GreatBigM/agent-skill-gen-skill",
+    "github": "https://github.com/GreatBigM/agent-skill-gen-skill",
+    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash",
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash"
+  },
+  {
+    "name": "agent-skill-review",
+    "description": "skill 审查：构成审查 + 发布前审查双清单，发布前必读。",
+    "version": "1.5.0",
+    "category": "autonomous-ai-agents",
+    "tags": [
+      "agent",
+      "skills",
+      "review",
+      "audit"
+    ],
+    "triggers": [
+      "审查skill",
+      "skill审核",
+      "二次审核",
+      "skill review"
+    ],
+    "stars": null,
+    "updated": "2026-08-12",
+    "gitee": "https://gitee.com/GreatBigM/agent-skill-review-skill",
+    "github": "https://github.com/GreatBigM/agent-skill-review-skill",
+    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash",
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash"
+  },
+  {
     "name": "gerrit-patch-flow",
     "description": "Gerrit 端到端流水线 — xml 拉基线 → patch 合入 → 本地修改 → 只推一笔（方案C 保持hash）",
     "version": "1.1.0",
@@ -47,54 +95,6 @@
     "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash",
     "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash"
-  },
-  {
-    "name": "hermes-skill-gen",
-    "description": "新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。",
-    "version": "1.5.0",
-    "category": "autonomous-ai-agents",
-    "tags": [
-      "hermes",
-      "skills",
-      "generation",
-      "architecture"
-    ],
-    "triggers": [
-      "生成skill",
-      "skill构成",
-      "skill架构",
-      "新建skill"
-    ],
-    "stars": 4,
-    "updated": "2026-08-12",
-    "gitee": "https://gitee.com/GreatBigM/hermes-skill-gen-skill",
-    "github": "https://github.com/GreatBigM/hermes-skill-gen-skill",
-    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash"
-  },
-  {
-    "name": "hermes-skill-review",
-    "description": "skill 审查：构成审查 + 发布前审查双清单，发布前必读。",
-    "version": "1.4.0",
-    "category": "autonomous-ai-agents",
-    "tags": [
-      "hermes",
-      "skills",
-      "review",
-      "audit"
-    ],
-    "triggers": [
-      "审查skill",
-      "skill审核",
-      "二次审核",
-      "skill review"
-    ],
-    "stars": 3,
-    "updated": "2026-08-12",
-    "gitee": "https://gitee.com/GreatBigM/hermes-skill-review-skill",
-    "github": "https://github.com/GreatBigM/hermes-skill-review-skill",
-    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash"
   },
   {
     "name": "iperf-standard-test",

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GreatBM'Zoo — Hermes Skill Market</title>
+<title>GreatBM'Zoo — Agent Skill Market</title>
 <style>
   :root {
     --bg: #0d1117; --card: #161b26; --border: #232a3a;
@@ -79,6 +79,40 @@
     </div>
     <div class="card" data-idx="1">
       <div class="card-head">
+        <h2>agent-skill-gen</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.6.0</span><span class="cat">autonomous-ai-agents</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">生成skill</span> <span class="chip">skill构成</span> <span class="chip">skill架构</span> <span class="chip">新建skill</span></div>
+        <p class="desc">新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/agent-skill-gen-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(1)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="2">
+      <div class="card-head">
+        <h2>agent-skill-review</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.5.0</span><span class="cat">autonomous-ai-agents</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">审查skill</span> <span class="chip">skill审核</span> <span class="chip">二次审核</span> <span class="chip">skill review</span></div>
+        <p class="desc">skill 审查：构成审查 + 发布前审查双清单，发布前必读。</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/agent-skill-review-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(2)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="3">
+      <div class="card-head">
         <h2>gerrit-patch-flow</h2>
         <span class="stars">★ 1</span>
       </div>
@@ -90,40 +124,6 @@
       <div class="card-foot">
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/gerrit-patch-flow-skill" target="_blank" rel="noopener">★ Star</a>
-        </div>
-        <button class="copy" onclick="copyCmd(1)">⧉ Copy</button>
-      </div>
-    </div>
-    <div class="card" data-idx="2">
-      <div class="card-head">
-        <h2>hermes-skill-gen</h2>
-        <span class="stars">★ 4</span>
-      </div>
-      <div class="badges"><span class="ver">v1.5.0</span><span class="cat">autonomous-ai-agents</span></div>
-      <div class="body">
-        <div class="triggers"><span class="chip">生成skill</span> <span class="chip">skill构成</span> <span class="chip">skill架构</span> <span class="chip">新建skill</span></div>
-        <p class="desc">新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。</p>
-      </div>
-      <div class="card-foot">
-        <div class="social">
-          <a class="btn" href="https://github.com/GreatBigM/hermes-skill-gen-skill" target="_blank" rel="noopener">★ Star</a>
-        </div>
-        <button class="copy" onclick="copyCmd(2)">⧉ Copy</button>
-      </div>
-    </div>
-    <div class="card" data-idx="3">
-      <div class="card-head">
-        <h2>hermes-skill-review</h2>
-        <span class="stars">★ 3</span>
-      </div>
-      <div class="badges"><span class="ver">v1.4.0</span><span class="cat">autonomous-ai-agents</span></div>
-      <div class="body">
-        <div class="triggers"><span class="chip">审查skill</span> <span class="chip">skill审核</span> <span class="chip">二次审核</span> <span class="chip">skill review</span></div>
-        <p class="desc">skill 审查：构成审查 + 发布前审查双清单，发布前必读。</p>
-      </div>
-      <div class="card-foot">
-        <div class="social">
-          <a class="btn" href="https://github.com/GreatBigM/hermes-skill-review-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
         <button class="copy" onclick="copyCmd(3)">⧉ Copy</button>
       </div>
@@ -226,8 +226,8 @@
 </div>
 <script>
 const CMDS = {
-  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/hermes-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
-  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/hermes-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
+  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
+  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
 };
 function copyCmd(idx) {
   const src = location.hostname.includes("gitee.io") ? "gitee" : "github";

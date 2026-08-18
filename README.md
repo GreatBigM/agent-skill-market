@@ -1,8 +1,8 @@
 # GreatBM'Zoo ★
 
-甜妞维护的 Hermes Agent skill 市场 — 嵌入式 & 工作流技能集，一键安装。
+甜妞维护的 Agent skill 市场 — 嵌入式 & 工作流技能集，一键安装。
 
-**在线市场**: https://greatbigm.github.io/hermes-skill-market/
+**在线市场**: https://greatbigm.github.io/agent-skill-market/
 
 ## 已收录 skills
 
@@ -13,9 +13,8 @@
 | serial-tftp | v1.6.0 | devops | 嵌入式串口交互与 TFTP 刷机 |
 | adb-tftp | v1.1.0 | devops | Ingenic T32 家族 ADB 通道 TFTP 烧录 |
 | iperf-standard-test | v1.0.0 | devops | iperf3 标准吞吐测试方法论 |
-| hermes-skill-gen | v1.4.0 | autonomous-ai-agents | skill 生成构成规范 |
-| hermes-skill-review | v1.4.0 | autonomous-ai-agents | skill 审查（构成+发布前双清单） |
-
+| agent-skill-gen | v1.6.0 | autonomous-ai-agents | skill 生成构成规范 |
+| agent-skill-review | v1.5.0 | autonomous-ai-agents | skill 审查（构成+发布前双清单） |
 ## 安装方法
 
 任意 skill 一键安装（以 qwiki 为例）：
@@ -47,7 +46,7 @@ python3 generate.py --remote   # 本地扫描 + gitee API 校验
 ## 仓库布局
 
 ```
-hermes-skill-market/
+agent-skill-market/
 ├── generate.py     # 生成器（自动发现）
 ├── index.html      # 生成产物：市场页面
 ├── data.json       # 生成产物：skill 元数据
