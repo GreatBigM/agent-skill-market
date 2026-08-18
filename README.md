@@ -27,8 +27,8 @@ curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash
 curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash
 ```
 
-安装脚本自动探测本机 agent（Hermes / Claude Code / Codex），支持：
-- `--target hermes,claude` 指定目标
+安装脚本自动探测本机 agent（Hermes / Claude Code / Codex / ZCode），支持：
+- `--target hermes,claude,zcode` 指定目标
 - `--all` 安装到全部
 - 重复执行 = 升级（自动备份旧版 + 版本对比）
 

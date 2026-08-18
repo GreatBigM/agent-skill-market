@@ -233,7 +233,7 @@ def render_html(items):
     <p class="sub">Agent Skill 集 · 即装即用</p>
     <div class="stats">
       <span>饲养员：GreatBigM、甜妞</span>
-      <span>多 agent 支持：Hermes / Claude Code / Codex</span>
+      <span>多 agent 支持：Hermes / Claude Code / Codex / ZCode</span>
       <span>感谢各位游客老爷的投喂</span>
     </div>
   </header>
@@ -246,7 +246,7 @@ def render_html(items):
       <div>© 2026 大山子科技有限公司 出品 · 版权所有 ｜ 本站 skill 均基于 MIT 协议开源</div>
       <div>免责声明：所有 skill 按「现状」提供，不附任何担保；烧录/调试等操作风险自负，作者不承担由此产生的任何损失</div>
       <div>安全提示：安装命令源自各 skill 官方仓库，执行前可查看 install.sh；请仅从本站及官方仓库安装，谨防仿冒</div>
-      <div>隐私保护：本站为纯静态页面，不收集任何用户信息，不设 Cookie，无第三方跟踪 ｜ Hermes、Claude Code、Codex 等商标归各自所有者所有</div>
+      <div>隐私保护：本站为纯静态页面，不收集任何用户信息，不设 Cookie，无第三方跟踪 ｜ Hermes、Claude Code、Codex、ZCode 等商标归各自所有者所有</div>
     </div>
   </footer>
 </div>

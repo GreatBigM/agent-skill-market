@@ -1,6 +1,6 @@
 # GreatBM'Zoo — 卡片规格（定稿）
 
-> 规格版本：v1.1（2026-08-12 定稿）
+> 规格版本：v1.2（2026-08-18 定稿）
 > 真相源：本文件 + `generate.py`（渲染代码即执行态，两者冲突以本文件为准，需同步修正 generate.py）
 > 变更流程：任何样式/内容结构调整 = 规格变更，先改本文件 bump 版本，再改 generate.py
 
@@ -65,7 +65,7 @@
 
 - 标题：GreatBM'Zoo（Zoo 高亮蓝）
 - 副标题：Agent Skill 集 · 即装即用
-- 统计行：饲养员：GreatBigM、甜妞 ｜ 多 agent 支持：Hermes / Claude Code / Codex ｜ 感谢各位游客老爷的投喂
+- 统计行：饲养员：GreatBigM、甜妞 ｜ 多 agent 支持：Hermes / Claude Code / Codex / ZCode ｜ 感谢各位游客老爷的投喂
 - 背景：深色 #0d1117 + 蓝/绿双色 radial 渐变光晕
 
 ## 7. 页脚声明（权益与安全）
