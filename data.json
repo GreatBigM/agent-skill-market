@@ -122,7 +122,7 @@
   {
     "name": "qwiki",
     "description": "个人知识库管理：卡片索引、知识沉淀、自动检索，AI 替你积累项目经验。",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "category": "knowledge",
     "tags": [
       "knowledge-base",
@@ -139,8 +139,8 @@
       "项目入驻",
       "知识卡片"
     ],
-    "stars": 3,
-    "updated": "2026-08-12",
+    "stars": 4,
+    "updated": "2026-08-18",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
