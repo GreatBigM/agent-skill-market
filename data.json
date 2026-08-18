@@ -147,6 +147,29 @@
     "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash"
   },
   {
+    "name": "repo-cloud-alignment",
+    "description": "repo 多仓项目强制拉齐云端（丢弃本地改动）— 全仓对齐、分支删除重建、交叉仓 API 依赖编译诊断",
+    "version": "1.0.0",
+    "category": "devops",
+    "tags": [],
+    "triggers": [
+      "拉齐云端",
+      "强制拉齐",
+      "丢弃本地改动",
+      "以云端为准",
+      "对齐主干",
+      "主干最新",
+      "删代码重拉",
+      "全仓对齐"
+    ],
+    "stars": 0,
+    "updated": "2026-08-18",
+    "gitee": "https://gitee.com/GreatBigM/repo-cloud-alignment-skill",
+    "github": "https://github.com/GreatBigM/repo-cloud-alignment-skill",
+    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash",
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash"
+  },
+  {
     "name": "serial-tftp",
     "description": "嵌入式串口交互与 TFTP 刷机：环境预检、模式判断、配网烧录、完成验证一站式。",
     "version": "1.6.0",
