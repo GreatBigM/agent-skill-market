@@ -232,7 +232,7 @@ def render_html(items):
     <h1>GreatBM'<span class="hl">Zoo</span></h1>
     <p class="sub">Agent Skill 集 · 即装即用</p>
     <div class="stats">
-      <span>饲养员：GreatBigM、甜妞</span>
+      <span>饲养员：GreatBigM、甜妞、小辉辉</span>
       <span>多 agent 支持：Hermes / Claude Code / Codex / ZCode</span>
       <span>感谢各位游客老爷的投喂</span>
     </div>
