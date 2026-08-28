@@ -65,10 +65,10 @@
         <h2>adb-tftp</h2>
         <span class="stars">★ 3</span>
       </div>
-      <div class="badges"><span class="ver">v1.3.0</span><span class="cat">devops</span></div>
+      <div class="badges"><span class="ver">v1.4.0</span><span class="cat">devops</span></div>
       <div class="body">
         <div class="triggers"><span class="chip">adb烧录</span> <span class="chip">cpspr</span> <span class="chip">mai_auto_flash</span> <span class="chip">ip-reset-and-wait</span> <span class="chip">分区烧录</span></div>
-        <p class="desc">Ingenic T32 NOR ADB TFTP 分区烧录：CPSPR 触发 U-Boot，回连免串口查IP。适配 HM6801/HM6502/HM6503/HM6402。</p>
+        <p class="desc">Ingenic T32 NOR ADB 通道：TFTP 分区烧录（CPSPR 触发）+ ADB 调试（连接/排障/断线恢复）。适配 HM6801/HM6502/HM6503/HM6402。</p>
       </div>
       <div class="card-foot">
         <div class="social">
@@ -113,6 +113,91 @@
     </div>
     <div class="card" data-idx="3">
       <div class="card-head">
+        <h2>embedded-diagnostic-collection</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.0.0</span><span class="cat">devops</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">收集日志</span> <span class="chip">抓日志</span> <span class="chip">采集数据</span> <span class="chip">诊断收集</span> <span class="chip">serial log</span></div>
+        <p class="desc">嵌入式设备诊断数据收集工作流 — 收集与分析分离，日志洪流=数据</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/embedded-diagnostic-collection-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(3)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="4">
+      <div class="card-head">
+        <h2>embedded-flash-troubleshooting</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.0.0</span><span class="cat">devops</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">TFTP超时</span> <span class="chip">TTTT</span> <span class="chip">烧录失败</span> <span class="chip">刷机卡住</span> <span class="chip">mai_tftp</span></div>
+        <p class="desc">嵌入式 TFTP/烧录失败系统化排障 — IP 冲突、CPSPR 触发、重试循环打断、烧录确认、Flash/ADB/Serial 交叉陷阱</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/embedded-flash-troubleshooting-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(4)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="5">
+      <div class="card-head">
+        <h2>embedded-kernel-oops-analysis</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.0.0</span><span class="cat">devops</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">oops</span> <span class="chip">BadVA</span> <span class="chip">Unable to handle kernel paging</span> <span class="chip">内核崩溃</span> <span class="chip">崩溃日志分析</span></div>
+        <p class="desc">Use when 内核 oops/BadVA 崩溃日志分析。MIPS oops 解读与 .ko 符号反查。</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/embedded-kernel-oops-analysis-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(5)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="6">
+      <div class="card-head">
+        <h2>embedded-test-loop</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.0.0</span><span class="cat">devops</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">测试</span> <span class="chip">test</span> <span class="chip">iperf</span> <span class="chip">WiFi测试</span> <span class="chip">性能测试</span></div>
+        <p class="desc">嵌入式设备编译→烧录→测试→分析循环 — 串口日志捕获、ADB 混合工作流、crash 分析、iperf3 吞吐回归</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/embedded-test-loop-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(6)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="7">
+      <div class="card-head">
+        <h2>embedded-wifi-configuration</h2>
+        
+      </div>
+      <div class="badges"><span class="ver">v1.0.0</span><span class="cat">devops</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">WiFi</span> <span class="chip">wpa_supplicant</span> <span class="chip">wpa_cli</span> <span class="chip">配网</span> <span class="chip">iperf3</span></div>
+        <p class="desc">嵌入式设备 WiFi 配网全流程 — wpa_supplicant 配置、ctrl_interface 陷阱、DHCP 获取 IP、iperf3 测试</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/embedded-wifi-configuration-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(7)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="8">
+      <div class="card-head">
         <h2>gerrit-patch-flow</h2>
         <span class="stars">★ 1</span>
       </div>
@@ -125,10 +210,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/gerrit-patch-flow-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(3)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(8)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="4">
+    <div class="card" data-idx="9">
       <div class="card-head">
         <h2>iperf-standard-test</h2>
         <span class="stars">★ 3</span>
@@ -142,10 +227,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/iperf-standard-test-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(4)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(9)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="5">
+    <div class="card" data-idx="10">
       <div class="card-head">
         <h2>qwiki</h2>
         <span class="stars">★ 4</span>
@@ -159,10 +244,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/qwiki-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(5)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(10)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="6">
+    <div class="card" data-idx="11">
       <div class="card-head">
         <h2>repo-cloud-alignment</h2>
         
@@ -176,27 +261,27 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/repo-cloud-alignment-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(6)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(11)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="7">
+    <div class="card" data-idx="12">
       <div class="card-head">
         <h2>serial-tftp</h2>
         <span class="stars">★ 3</span>
       </div>
-      <div class="badges"><span class="ver">v1.8.0</span><span class="cat">devops</span></div>
+      <div class="badges"><span class="ver">v1.9.0</span><span class="cat">devops</span></div>
       <div class="body">
         <div class="triggers"><span class="chip">tftp</span> <span class="chip">刷机</span> <span class="chip">烧录</span> <span class="chip">mai_tftp</span> <span class="chip">tftpboot</span></div>
-        <p class="desc">嵌入式串口交互与 TFTP 刷机：环境预检、模式判断、配网烧录、完成验证一站式。</p>
+        <p class="desc">嵌入式串口交互 + TFTP 刷机一站式：串口连接/盲打登录/命令执行/故障排查 + 环境预检/模式判断/配网烧录/完成验证。</p>
       </div>
       <div class="card-foot">
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/serial-tftp-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(7)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(12)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="8">
+    <div class="card" data-idx="13">
       <div class="card-head">
         <h2>workbench-workflow</h2>
         <span class="stars">★ 3</span>
@@ -210,7 +295,7 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/workbench-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(8)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(13)">⧉ Copy</button>
       </div>
     </div>
   </div>
@@ -226,8 +311,8 @@
 </div>
 <script>
 const CMDS = {
-  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
-  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
+  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/embedded-diagnostic-collection-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/embedded-flash-troubleshooting-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/embedded-kernel-oops-analysis-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/embedded-test-loop-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/embedded-wifi-configuration-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
+  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/embedded-diagnostic-collection-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/embedded-flash-troubleshooting-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/embedded-kernel-oops-analysis-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/embedded-test-loop-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/embedded-wifi-configuration-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
 };
 function copyCmd(idx) {
   const src = location.hostname.includes("gitee.io") ? "gitee" : "github";
