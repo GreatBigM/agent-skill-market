@@ -65,7 +65,7 @@
 
 - 标题：GreatBM'Zoo（Zoo 高亮蓝）
 - 副标题：Agent Skill 集 · 即装即用
-- 统计行：饲养员：GreatBigM、甜妞 ｜ 多 agent 支持：Hermes / Claude Code / Codex / ZCode ｜ 感谢各位游客老爷的投喂
+- 统计行：饲养员：GreatBigM、甜妞 ｜ 多 agent 支持：Hermes / Claude Code / Codex / ZCode / pi ｜ 感谢各位游客老爷的投喂
 - 背景：深色 #0d1117 + 蓝/绿双色 radial 渐变光晕
 
 ## 7. 页脚声明（权益与安全）

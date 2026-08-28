@@ -2,7 +2,7 @@
   {
     "name": "adb-tftp",
     "description": "Ingenic T32 NOR ADB 通道：TFTP 分区烧录（CPSPR 触发）+ ADB 调试（连接/排障/断线恢复）。适配 HM6801/HM6502/HM6503/HM6402。",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "category": "devops",
     "tags": [
       "adb",
@@ -32,7 +32,7 @@
       "推送二进制"
     ],
     "stars": 3,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash",
@@ -41,7 +41,7 @@
   {
     "name": "agent-skill-gen",
     "description": "新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "category": "autonomous-ai-agents",
     "tags": [
       "agent",
@@ -56,7 +56,7 @@
       "新建skill"
     ],
     "stars": 4,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-gen-skill",
     "github": "https://github.com/GreatBigM/agent-skill-gen-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash",
@@ -65,7 +65,7 @@
   {
     "name": "agent-skill-review",
     "description": "skill 审查：构成审查 + 发布前审查双清单，发布前必读。",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "category": "autonomous-ai-agents",
     "tags": [
       "agent",
@@ -80,7 +80,7 @@
       "skill review"
     ],
     "stars": 3,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-review-skill",
     "github": "https://github.com/GreatBigM/agent-skill-review-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash",
@@ -89,7 +89,7 @@
   {
     "name": "gerrit-patch-flow",
     "description": "Gerrit 端到端流水线 — xml 拉基线 → patch 合入 → 本地修改 → 只推一笔（方案C 保持hash）",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -102,7 +102,7 @@
       "xml拉代码"
     ],
     "stars": 1,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/gerrit-patch-flow-skill",
     "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash",
@@ -111,7 +111,7 @@
   {
     "name": "iperf-standard-test",
     "description": "iperf3 标准吞吐测试：测试矩阵设计、执行通道选择、数据分析与报告模板全流程。",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -125,7 +125,7 @@
       "重传率分析"
     ],
     "stars": 3,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash",
@@ -134,7 +134,7 @@
   {
     "name": "qwiki",
     "description": "个人知识库管理：卡片索引、知识沉淀、自动检索，AI 替你积累项目经验。",
-    "version": "2.4.1",
+    "version": "2.4.2",
     "category": "knowledge",
     "tags": [
       "knowledge-base",
@@ -152,7 +152,7 @@
       "知识卡片"
     ],
     "stars": 4,
-    "updated": "2026-08-19",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
@@ -161,7 +161,7 @@
   {
     "name": "repo-cloud-alignment",
     "description": "repo 多仓项目强制拉齐云端（丢弃本地改动）— 全仓对齐、分支删除重建、交叉仓 API 依赖编译诊断",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -175,7 +175,7 @@
       "全仓对齐"
     ],
     "stars": 0,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/repo-cloud-alignment-skill",
     "github": "https://github.com/GreatBigM/repo-cloud-alignment-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash",
@@ -184,7 +184,7 @@
   {
     "name": "serial-tftp",
     "description": "嵌入式串口交互 + TFTP 刷机一站式：串口连接/盲打登录/命令执行/故障排查 + 环境预检/模式判断/配网烧录/完成验证。",
-    "version": "1.9.0",
+    "version": "1.9.1",
     "category": "devops",
     "tags": [
       "serial",
@@ -214,7 +214,7 @@
       "串口乱码"
     ],
     "stars": 3,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash",
@@ -223,7 +223,7 @@
   {
     "name": "workbench-workflow",
     "description": "项目任务管理体系：change 四要素生命周期、闭环验收、spec 维护，任务全程可控。",
-    "version": "3.3.0",
+    "version": "3.3.1",
     "category": "knowledge",
     "tags": [],
     "triggers": [
@@ -238,7 +238,7 @@
       "四要素"
     ],
     "stars": 3,
-    "updated": "2026-08-18",
+    "updated": "2026-08-28",
     "gitee": "https://gitee.com/GreatBigM/workbench-skill",
     "github": "https://github.com/GreatBigM/workbench-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash",
