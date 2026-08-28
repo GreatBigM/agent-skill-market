@@ -19,6 +19,7 @@ import urllib.request
 import yaml
 
 HOME = os.path.expanduser("~")
+SKILLS_DIR = os.path.join(HOME, "agent-skill-repos")  # 发布仓汇总目录（与门户 agent-skill-market 平级）
 GITEE_USER = "GreatBigM"
 GITHUB_USER = "GreatBigM"
 
@@ -34,10 +35,12 @@ def is_publish_repo(d):
 
 
 def discover_local():
-    """扫描 $HOME 下所有发布仓目录名"""
+    """扫描 agent-skill-repos 汇总目录下所有发布仓目录名（叶子名=远端仓名）"""
     out = []
-    for name in sorted(os.listdir(HOME)):
-        d = os.path.join(HOME, name)
+    if not os.path.isdir(SKILLS_DIR):
+        return out
+    for name in sorted(os.listdir(SKILLS_DIR)):
+        d = os.path.join(SKILLS_DIR, name)
         if is_publish_repo(d):
             out.append(name)
     return out
@@ -122,7 +125,7 @@ def collect(use_remote):
 
     items = []
     for name in names:
-        repo_dir = os.path.join(HOME, name)
+        repo_dir = os.path.join(SKILLS_DIR, name)
         fm = parse_frontmatter(os.path.join(repo_dir, "SKILL.md"))
         agent = fm.get("metadata", {}).get("agent", {}) if isinstance(fm.get("metadata"), dict) else {}
         items.append({

@@ -34,7 +34,7 @@ curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.
 ## 生成机制
 
 - 页面由 `generate.py` 自动生成，**单一真相源 = 各 skill 发布仓库本身的 SKILL.md**
-- 自动扫描 `$HOME` 下所有「含 SKILL.md + install.sh + .git」的发布仓
+- 自动扫描 `~/agent-skill-repos/` 下所有「含 SKILL.md + install.sh + .git」的发布仓
 - 发新 skill：本地建仓发布 → 重跑 `python3 generate.py` → 自动入市场
 - 生成产物：`index.html`（页面）+ `data.json`（机器可读，供 registry 消费）
 
@@ -46,11 +46,18 @@ python3 generate.py --remote   # 本地扫描 + gitee API 校验
 ## 仓库布局
 
 ```
-agent-skill-market/
+~/agent-skill-market/          # 门户：生成器 + 页面（本仓）
 ├── generate.py     # 生成器（自动发现）
 ├── index.html      # 生成产物：市场页面
 ├── data.json       # 生成产物：skill 元数据
+├── SPEC.md         # 卡片规格
 └── README.md
+
+~/agent-skill-repos/           # 发布仓汇总：所有 xxx-skill 仓的单一居住地
+├── serial-tftp-skill/
+├── adb-tftp-skill/
+├── qwiki-skill/
+└── ...
 ```
 
 ## 对外发布约定
