@@ -41,7 +41,7 @@
   {
     "name": "agent-skill-gen",
     "description": "新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "category": "autonomous-ai-agents",
     "tags": [
       "agent",
@@ -56,7 +56,7 @@
       "新建skill"
     ],
     "stars": 4,
-    "updated": "2026-08-28",
+    "updated": "2026-08-29",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-gen-skill",
     "github": "https://github.com/GreatBigM/agent-skill-gen-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash",
@@ -134,7 +134,7 @@
   {
     "name": "qwiki",
     "description": "个人知识库管理：卡片索引、知识沉淀、自动检索，AI 替你积累项目经验。",
-    "version": "2.4.2",
+    "version": "2.5.0",
     "category": "knowledge",
     "tags": [
       "knowledge-base",
@@ -152,7 +152,7 @@
       "知识卡片"
     ],
     "stars": 4,
-    "updated": "2026-08-28",
+    "updated": "2026-08-29",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
@@ -184,7 +184,7 @@
   {
     "name": "serial-tftp",
     "description": "嵌入式串口交互 + TFTP 刷机一站式：串口连接/盲打登录/命令执行/故障排查 + 环境预检/模式判断/配网烧录/完成验证。",
-    "version": "1.9.1",
+    "version": "2.0.0",
     "category": "devops",
     "tags": [
       "serial",
@@ -214,7 +214,7 @@
       "串口乱码"
     ],
     "stars": 3,
-    "updated": "2026-08-28",
+    "updated": "2026-08-29",
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash",
