@@ -6,15 +6,18 @@
 
 ## 已收录 skills
 
-| skill | 版本 | 分类 | 说明 |
-|-------|------|------|------|
-| qwiki | v2.1.0 | knowledge | 个人知识库建设（知识卡片/检索/沉淀） |
-| workbench-workflow | v3.1.0 | knowledge | 项目任务管理体系（change 四要素生命周期） |
-| serial-tftp | v1.6.0 | devops | 嵌入式串口交互与 TFTP 刷机 |
-| adb-tftp | v1.1.0 | devops | Ingenic T32 家族 ADB 通道 TFTP 烧录 |
-| iperf-standard-test | v1.0.0 | devops | iperf3 标准吞吐测试方法论 |
-| agent-skill-gen | v1.6.0 | autonomous-ai-agents | skill 生成构成规范 |
-| agent-skill-review | v1.5.0 | autonomous-ai-agents | skill 审查（构成+发布前双清单） |
+版本与星数不进这张表——它们由 `generate.py` 从各仓 `SKILL.md` 读出、写进 `index.html` / `data.json`（单一真相源 = 各发布仓），此处手写一份必然漂移。
+
+| skill | 分类 | 说明 |
+|-------|------|------|
+| qwiki | knowledge | 个人知识库建设（知识卡片/检索/沉淀） |
+| workbench-workflow | knowledge | 项目任务管理体系（change 四要素生命周期） |
+| serial-tftp | devops | 嵌入式串口交互与 TFTP 刷机 |
+| adb-tftp | devops | Ingenic T32 家族 ADB 通道 TFTP 烧录 |
+| iperf-standard-test | devops | iperf3 标准吞吐测试方法论 |
+| agent-skill-gen | autonomous-ai-agents | skill 生成构成规范 |
+| agent-skill-review | autonomous-ai-agents | skill 审查（构成+发布前双清单） |
+
 ## 安装方法
 
 任意 skill 一键安装（以 qwiki 为例）：
