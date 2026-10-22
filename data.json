@@ -2,7 +2,7 @@
   {
     "name": "adb-tftp",
     "description": "Ingenic T32 NOR ADB 通道：TFTP 分区烧录（CPSPR 触发）+ ADB 调试（连接/排障/断线恢复）。适配 <项目E>/<项目A>/<项目B>/<项目D>。",
-    "version": "1.4.7",
+    "version": "1.4.8",
     "category": "devops",
     "tags": [
       "adb",
@@ -41,7 +41,7 @@
   {
     "name": "agent-skill-gen",
     "description": "新 skill 生成构成规范：文件层级、构成约束、打包整理，生成新技能前必读。",
-    "version": "1.6.7",
+    "version": "1.7.2",
     "category": "autonomous-ai-agents",
     "tags": [
       "agent",
@@ -56,7 +56,7 @@
       "新建skill"
     ],
     "stars": 4,
-    "updated": "2026-10-15",
+    "updated": "2026-10-22",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-gen-skill",
     "github": "https://github.com/GreatBigM/agent-skill-gen-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash",
@@ -65,7 +65,7 @@
   {
     "name": "agent-skill-review",
     "description": "skill 审查：构成审查 + 发布前审查双清单，发布前必读。",
-    "version": "1.11.6",
+    "version": "1.12.1",
     "category": "autonomous-ai-agents",
     "tags": [
       "agent",
@@ -82,7 +82,7 @@
       "skill review"
     ],
     "stars": 3,
-    "updated": "2026-10-15",
+    "updated": "2026-10-22",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-review-skill",
     "github": "https://github.com/GreatBigM/agent-skill-review-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash",
@@ -91,7 +91,7 @@
   {
     "name": "gerrit-patch-flow",
     "description": "Gerrit 端到端流水线 — xml 拉基线 → patch 合入 → 本地修改 → 只推一笔（方案C 保持hash）",
-    "version": "1.2.7",
+    "version": "1.2.8",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -113,7 +113,7 @@
   {
     "name": "iperf-standard-test",
     "description": "iperf3 标准吞吐测试：测试矩阵设计、执行通道选择、数据分析与报告模板全流程。",
-    "version": "1.2.11",
+    "version": "1.2.12",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -136,7 +136,7 @@
   {
     "name": "qwiki",
     "description": "个人知识库管理：卡片索引、知识沉淀、自动检索，AI 替你积累项目经验。",
-    "version": "2.13.0",
+    "version": "2.14.1",
     "category": "knowledge",
     "tags": [
       "knowledge-base",
@@ -154,7 +154,7 @@
       "知识卡片"
     ],
     "stars": 4,
-    "updated": "2026-10-15",
+    "updated": "2026-10-22",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
@@ -163,7 +163,7 @@
   {
     "name": "repo-cloud-alignment",
     "description": "repo 多仓项目云端对齐与 manifest 切换（-m）— 全仓对齐、分支重建、整树 sync 坑、交叉仓依赖诊断",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "category": "devops",
     "tags": [],
     "triggers": [
