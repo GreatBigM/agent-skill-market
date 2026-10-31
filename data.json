@@ -31,7 +31,7 @@
       "adb shell",
       "推送二进制"
     ],
-    "stars": 3,
+    "stars": null,
     "updated": "2026-10-15",
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
@@ -55,7 +55,7 @@
       "skill架构",
       "新建skill"
     ],
-    "stars": 4,
+    "stars": null,
     "updated": "2026-10-22",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-gen-skill",
     "github": "https://github.com/GreatBigM/agent-skill-gen-skill",
@@ -81,7 +81,7 @@
       "再次审查",
       "skill review"
     ],
-    "stars": 3,
+    "stars": null,
     "updated": "2026-10-22",
     "gitee": "https://gitee.com/GreatBigM/agent-skill-review-skill",
     "github": "https://github.com/GreatBigM/agent-skill-review-skill",
@@ -103,7 +103,7 @@
       "合入change",
       "xml拉代码"
     ],
-    "stars": 1,
+    "stars": null,
     "updated": "2026-10-15",
     "gitee": "https://gitee.com/GreatBigM/gerrit-patch-flow-skill",
     "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
@@ -113,7 +113,7 @@
   {
     "name": "iperf-standard-test",
     "description": "iperf3 标准吞吐测试：测试矩阵设计、执行通道选择、数据分析与报告模板全流程。",
-    "version": "1.2.13",
+    "version": "1.2.14",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -126,8 +126,8 @@
       "爬坡",
       "重传率分析"
     ],
-    "stars": 3,
-    "updated": "2026-10-29",
+    "stars": null,
+    "updated": "2026-10-31",
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash",
@@ -153,7 +153,7 @@
       "项目入驻",
       "知识卡片"
     ],
-    "stars": 4,
+    "stars": null,
     "updated": "2026-10-23",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
@@ -189,7 +189,7 @@
       "增量对齐",
       "构建基线"
     ],
-    "stars": 0,
+    "stars": null,
     "updated": "2026-10-15",
     "gitee": "https://gitee.com/GreatBigM/repo-cloud-alignment-skill",
     "github": "https://github.com/GreatBigM/repo-cloud-alignment-skill",
@@ -228,7 +228,7 @@
       "串口无数据",
       "串口乱码"
     ],
-    "stars": 3,
+    "stars": null,
     "updated": "2026-10-29",
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
@@ -252,7 +252,7 @@
       "design吸收",
       "四要素"
     ],
-    "stars": 3,
+    "stars": null,
     "updated": "2026-10-15",
     "gitee": "https://gitee.com/GreatBigM/workbench-skill",
     "github": "https://github.com/GreatBigM/workbench-skill",
