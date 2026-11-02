@@ -14,6 +14,7 @@ import os
 import re
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 
 import yaml
@@ -80,19 +81,35 @@ def _github_token():
 
 
 def fetch_github_stars(names):
-    """GitHub API 拉取各仓库 star 数（失败静默置 None，不阻塞生成）"""
+    """GitHub API 拉取各仓库 star 数（失败静默置 None，不阻塞生成）
+
+    2026-11-02 修：GITHUB_TOKEN 失效时 api 全量 401，旧实现把 star 一律写成 None，
+    10-31 刷新因此把网页星数全部抹平（静默劣化）。现改为 401/403 自动退回匿名请求
+    （匿名 60 次/小时，9 个仓足够）。
+    """
     token = _github_token()
     result = {}
     for n in names:
-        req = urllib.request.Request(f"https://api.github.com/repos/{GITHUB_USER}/{n}",
-                                     headers={"Accept": "application/vnd.github+json"})
-        if token:
-            req.add_header("Authorization", f"Bearer {token}")
-        try:
-            with urllib.request.urlopen(req, timeout=10) as r:
-                result[n] = json.load(r).get("stargazers_count")
-        except Exception:
-            result[n] = None
+        url = f"https://api.github.com/repos/{GITHUB_USER}/{n}"
+        attempts = ([token] if token else []) + [None]   # 先带 token，401/403 则退回匿名
+        val = None
+        for tok in attempts:
+            req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json"})
+            if tok:
+                req.add_header("Authorization", f"Bearer {tok}")
+            try:
+                with urllib.request.urlopen(req, timeout=10) as r:
+                    val = json.load(r).get("stargazers_count")
+                break
+            except urllib.error.HTTPError as e:
+                if e.code in (401, 403) and tok:
+                    continue           # token 失效/无权限 → 换匿名再试
+                val = None
+                break
+            except Exception:
+                val = None
+                break
+        result[n] = val
     return result
 
 
