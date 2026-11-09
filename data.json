@@ -89,6 +89,31 @@
     "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash"
   },
   {
+    "name": "estimate-memory-budget",
+    "description": "Ingenic T32Pro 内存评估：收集分辨率/码率/流配置，支持单摄/双摄/多摄、MTP 与 H264/WebRTC，按标定公式估算 rmem/Linux 内存并输出 Excel。",
+    "version": "0.12.0",
+    "category": "embedded-memory",
+    "tags": [],
+    "triggers": [
+      "内存评估",
+      "内存预估",
+      "内存占用",
+      "rmem 估算",
+      "双摄内存",
+      "MTP 内存",
+      "H264 内存",
+      "WebRTC 内存",
+      "B01 内存",
+      "memory budget"
+    ],
+    "stars": null,
+    "updated": "2026-11-09",
+    "gitee": "https://gitee.com/GreatBigM/estimate-memory-budget-skill",
+    "github": "https://github.com/GreatBigM/estimate-memory-budget-skill",
+    "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/estimate-memory-budget-skill/raw/main/install.sh | bash",
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/estimate-memory-budget-skill/main/install.sh | bash"
+  },
+  {
     "name": "gerrit-patch-flow",
     "description": "Gerrit 端到端流水线 — xml 拉基线 → patch 合入 → 本地修改 → 只推一笔（方案C 保持hash）",
     "version": "1.2.8",
