@@ -114,7 +114,7 @@
     <div class="card" data-idx="3">
       <div class="card-head">
         <h2>estimate-memory-budget</h2>
-        
+        <span class="stars">★ 1</span>
       </div>
       <div class="badges"><span class="ver">v0.12.0</span><span class="cat">embedded-memory</span></div>
       <div class="body">
@@ -181,6 +181,23 @@
     </div>
     <div class="card" data-idx="7">
       <div class="card-head">
+        <h2>qwork</h2>
+        <span class="stars">★ 3</span>
+      </div>
+      <div class="badges"><span class="ver">v3.4.4</span><span class="cat">knowledge</span></div>
+      <div class="body">
+        <div class="triggers"><span class="chip">qwork</span> <span class="chip">workbench</span> <span class="chip">change</span> <span class="chip">新建任务</span> <span class="chip">闭环</span></div>
+        <p class="desc">项目任务管理体系：change 四要素生命周期、闭环验收、spec 维护，任务全程可控。</p>
+      </div>
+      <div class="card-foot">
+        <div class="social">
+          <a class="btn" href="https://github.com/GreatBigM/qwork-skill" target="_blank" rel="noopener">★ Star</a>
+        </div>
+        <button class="copy" onclick="copyCmd(7)">⧉ Copy</button>
+      </div>
+    </div>
+    <div class="card" data-idx="8">
+      <div class="card-head">
         <h2>repo-cloud-alignment</h2>
         
       </div>
@@ -193,10 +210,10 @@
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/repo-cloud-alignment-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
-        <button class="copy" onclick="copyCmd(7)">⧉ Copy</button>
+        <button class="copy" onclick="copyCmd(8)">⧉ Copy</button>
       </div>
     </div>
-    <div class="card" data-idx="8">
+    <div class="card" data-idx="9">
       <div class="card-head">
         <h2>serial-tftp</h2>
         <span class="stars">★ 3</span>
@@ -209,23 +226,6 @@
       <div class="card-foot">
         <div class="social">
           <a class="btn" href="https://github.com/GreatBigM/serial-tftp-skill" target="_blank" rel="noopener">★ Star</a>
-        </div>
-        <button class="copy" onclick="copyCmd(8)">⧉ Copy</button>
-      </div>
-    </div>
-    <div class="card" data-idx="9">
-      <div class="card-head">
-        <h2>workbench-workflow</h2>
-        <span class="stars">★ 3</span>
-      </div>
-      <div class="badges"><span class="ver">v3.3.7</span><span class="cat">knowledge</span></div>
-      <div class="body">
-        <div class="triggers"><span class="chip">workbench</span> <span class="chip">change</span> <span class="chip">新建任务</span> <span class="chip">闭环</span> <span class="chip">验收</span></div>
-        <p class="desc">项目任务管理体系：change 四要素生命周期、闭环验收、spec 维护，任务全程可控。</p>
-      </div>
-      <div class="card-foot">
-        <div class="social">
-          <a class="btn" href="https://github.com/GreatBigM/workbench-skill" target="_blank" rel="noopener">★ Star</a>
         </div>
         <button class="copy" onclick="copyCmd(9)">⧉ Copy</button>
       </div>
@@ -243,8 +243,8 @@
 </div>
 <script>
 const CMDS = {
-  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/estimate-memory-budget-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/workbench-skill/main/install.sh | bash"],
-  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/estimate-memory-budget-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/workbench-skill/raw/main/install.sh | bash"]
+  "github": ["curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/estimate-memory-budget-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwork-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash", "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash"],
+  "gitee": ["curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/estimate-memory-budget-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/qwork-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash", "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash"]
 };
 function copyCmd(idx) {
   const src = location.hostname.includes("gitee.io") ? "gitee" : "github";
