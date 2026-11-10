@@ -36,8 +36,7 @@
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/adb-tftp-skill/main/install.sh | bash"
   },
   {
     "name": "agent-skill-gen",
@@ -61,8 +60,7 @@
     "gitee": "https://gitee.com/GreatBigM/agent-skill-gen-skill",
     "github": "https://github.com/GreatBigM/agent-skill-gen-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-gen-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-gen-skill/main/install.sh | bash"
   },
   {
     "name": "agent-skill-review",
@@ -88,8 +86,7 @@
     "gitee": "https://gitee.com/GreatBigM/agent-skill-review-skill",
     "github": "https://github.com/GreatBigM/agent-skill-review-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/agent-skill-review-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/agent-skill-review-skill/main/install.sh | bash"
   },
   {
     "name": "estimate-memory-budget",
@@ -114,8 +111,7 @@
     "gitee": "https://gitee.com/GreatBigM/estimate-memory-budget-skill",
     "github": "https://github.com/GreatBigM/estimate-memory-budget-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/estimate-memory-budget-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/estimate-memory-budget-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/estimate-memory-budget-skill/main/install.sh | bash"
   },
   {
     "name": "gerrit-patch-flow",
@@ -137,8 +133,7 @@
     "gitee": "https://gitee.com/GreatBigM/gerrit-patch-flow-skill",
     "github": "https://github.com/GreatBigM/gerrit-patch-flow-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/gerrit-patch-flow-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/gerrit-patch-flow-skill/main/install.sh | bash"
   },
   {
     "name": "iperf-standard-test",
@@ -161,8 +156,7 @@
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/iperf-standard-test-skill/main/install.sh | bash"
   },
   {
     "name": "qwiki",
@@ -189,8 +183,7 @@
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwiki-skill/main/install.sh | bash"
   },
   {
     "name": "qwork",
@@ -215,8 +208,7 @@
     "gitee": "https://gitee.com/GreatBigM/qwork-skill",
     "github": "https://github.com/GreatBigM/qwork-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwork-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwork-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/qwork-skill/main/install.sh | bash"
   },
   {
     "name": "repo-cloud-alignment",
@@ -252,8 +244,7 @@
     "gitee": "https://gitee.com/GreatBigM/repo-cloud-alignment-skill",
     "github": "https://github.com/GreatBigM/repo-cloud-alignment-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/repo-cloud-alignment-skill/main/install.sh | bash"
   },
   {
     "name": "serial-tftp",
@@ -292,7 +283,6 @@
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash",
-    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash",
-    "remote_missing": false
+    "install_github": "curl -fsSL https://raw.githubusercontent.com/GreatBigM/serial-tftp-skill/main/install.sh | bash"
   }
 ]
