@@ -90,8 +90,8 @@
   },
   {
     "name": "estimate-memory-budget",
-    "description": "Ingenic T32Pro 内存评估：收集分辨率/码率/流配置，支持单摄/双摄/多摄、MTP 与 H264/WebRTC，按标定公式估算 rmem/Linux 内存并输出 Excel。",
-    "version": "0.12.0",
+    "description": "嵌入式摄像头内存评估，双平台：君正 T32Pro（rmem 公式）/ SigmaStar（MMA 实测或公式）。支持单摄/双摄、MTP、H264/WebRTC，按五构件输出 Excel。",
+    "version": "0.16.7",
     "category": "embedded-memory",
     "tags": [],
     "triggers": [
@@ -103,11 +103,16 @@
       "MTP 内存",
       "H264 内存",
       "WebRTC 内存",
-      "B01 内存",
-      "memory budget"
+      "H264+WebRTC 版 内存",
+      "memory budget",
+      "MMA 堆",
+      "sigmastar 内存",
+      "AOV 内存",
+      "ring 池",
+      "SigmaStar-256MB 内存"
     ],
     "stars": 1,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "gitee": "https://gitee.com/GreatBigM/estimate-memory-budget-skill",
     "github": "https://github.com/GreatBigM/estimate-memory-budget-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/estimate-memory-budget-skill/raw/main/install.sh | bash",
