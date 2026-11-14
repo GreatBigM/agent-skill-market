@@ -91,7 +91,7 @@
   {
     "name": "estimate-memory-budget",
     "description": "嵌入式摄像头内存评估，双平台：君正 T32Pro（rmem 公式）/ SigmaStar（MMA 实测或公式）。支持单摄/双摄、MTP、H264/WebRTC，按五构件输出 Excel。",
-    "version": "0.16.7",
+    "version": "0.16.9",
     "category": "embedded-memory",
     "tags": [],
     "triggers": [
@@ -112,7 +112,7 @@
       "SigmaStar-256MB 内存"
     ],
     "stars": 1,
-    "updated": "2026-11-10",
+    "updated": "2026-11-14",
     "gitee": "https://gitee.com/GreatBigM/estimate-memory-budget-skill",
     "github": "https://github.com/GreatBigM/estimate-memory-budget-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/estimate-memory-budget-skill/raw/main/install.sh | bash",
@@ -166,7 +166,7 @@
   {
     "name": "qwiki",
     "description": "个人知识库管理：卡片索引、知识沉淀、自动检索，AI 替你积累项目经验。",
-    "version": "2.23.3",
+    "version": "2.44.2",
     "category": "knowledge",
     "tags": [
       "knowledge-base",
@@ -184,7 +184,7 @@
       "知识卡片"
     ],
     "stars": 4,
-    "updated": "2026-10-23",
+    "updated": "2026-11-14",
     "gitee": "https://gitee.com/GreatBigM/qwiki-skill",
     "github": "https://github.com/GreatBigM/qwiki-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/qwiki-skill/raw/main/install.sh | bash",
@@ -218,7 +218,7 @@
   {
     "name": "repo-cloud-alignment",
     "description": "repo 多仓项目云端对齐与 manifest 切换（-m）— 全仓对齐、分支重建、整树 sync 坑、交叉仓依赖诊断",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "category": "devops",
     "tags": [],
     "triggers": [
@@ -245,7 +245,7 @@
       "构建基线"
     ],
     "stars": 0,
-    "updated": "2026-10-15",
+    "updated": "2026-11-14",
     "gitee": "https://gitee.com/GreatBigM/repo-cloud-alignment-skill",
     "github": "https://github.com/GreatBigM/repo-cloud-alignment-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/repo-cloud-alignment-skill/raw/main/install.sh | bash",
