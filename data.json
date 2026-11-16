@@ -32,7 +32,7 @@
       "推送二进制"
     ],
     "stars": 3,
-    "updated": "2026-10-15",
+    "updated": "2026-11-16",
     "gitee": "https://gitee.com/GreatBigM/adb-tftp-skill",
     "github": "https://github.com/GreatBigM/adb-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/adb-tftp-skill/raw/main/install.sh | bash",
@@ -162,7 +162,7 @@
       "重传率分析"
     ],
     "stars": 3,
-    "updated": "2026-11-12",
+    "updated": "2026-11-16",
     "gitee": "https://gitee.com/GreatBigM/iperf-standard-test-skill",
     "github": "https://github.com/GreatBigM/iperf-standard-test-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/iperf-standard-test-skill/raw/main/install.sh | bash",
@@ -282,7 +282,7 @@
       "串口乱码"
     ],
     "stars": 3,
-    "updated": "2026-11-04",
+    "updated": "2026-11-16",
     "gitee": "https://gitee.com/GreatBigM/serial-tftp-skill",
     "github": "https://github.com/GreatBigM/serial-tftp-skill",
     "install_gitee": "curl -fsSL https://gitee.com/GreatBigM/serial-tftp-skill/raw/main/install.sh | bash",
